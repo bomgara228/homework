@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1. Подсчитать сумму всех чисел в заданном пользователем диапазоне. 
+        let deap = +prompt('Диапазон');
+        let bom = 0;
+        for (let i = 1; i <= deap; i++) {
+            bom += i;
+        }
+        console.log(bom);*/
+
+        /*2. Запросить 2 числа и найти только наибольший общий делитель.
+        let aga1 = +prompt('Введите число');
+        let aga2 = +prompt('Введите ещё 1 число');*/
+
+        /*5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать,
+         сколько четных и нечетных. Вывести статистику на экран.
+         Учтите, что достаточно одной пере-менной (не 10) для ввода чисел пользователем.*/
+        let podop;
+        let poloz = 0;
+        let otris = 0;
+        let nol = 0;
+        let  chet = 0;
+        let nechet = 0;
+        for (let i = 1; i <= 10; i++) {
+            podop = +prompt('Введите число');
+            if (podop == 0) {
+                nol++;
+            } else if (podop > 0) {
+                poloz++;
+            } else {
+                otris++;
+            }
+            if ( podop % 2 == 0) {
+                chet++;
+            } else {
+                nechet++;
+            }
+        }
+        console.log('Нулей: ' + nol)
+        console.log('Положительных: ' + poloz)
+        console.log('Отрицательных: ' + otris)
+        console.log('Четных: ' + chet)
+        console.log('Нечетных: ' + nechet)
+    </script>
+</body>
+</html>
